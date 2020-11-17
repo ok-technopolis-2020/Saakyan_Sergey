@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -10,19 +9,10 @@
   width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.05);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 button {
@@ -43,8 +33,7 @@ button {
   max-width: 562px;
   min-height: 500px;
   position: relative;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 3;
   padding-bottom: 49px;
 }
@@ -55,8 +44,7 @@ button {
   content: "";
   background-color: #ffffff;
   position: absolute;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .todo-main::before {
@@ -75,12 +63,8 @@ button {
 .todo-main__input {
   padding: 20px;
   border-bottom: 1px solid #CCCCCC;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .todo-main__input button {
@@ -94,9 +78,6 @@ button {
 .todo-main__input input, .todo-main__input input {
   width: 100%;
   border: none;
-  -webkit-box-ordinal-group: none;
-      -ms-flex-order: none;
-          order: none;
   font-style: italic;
   font-weight: 300;
   font-size: 24px;
@@ -105,37 +86,7 @@ button {
   outline-offset: 0;
 }
 
-.todo-main__input input::-webkit-input-placeholder, .todo-main__input input::-webkit-input-placeholder {
-  -webkit-box-ordinal-group: none;
-          order: none;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  color: #CCCCCC;
-}
-
-.todo-main__input input:-ms-input-placeholder, .todo-main__input input:-ms-input-placeholder {
-  -ms-flex-order: none;
-      order: none;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  color: #CCCCCC;
-}
-
-.todo-main__input input::-ms-input-placeholder, .todo-main__input input::-ms-input-placeholder {
-  -ms-flex-order: none;
-      order: none;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  color: #CCCCCC;
-}
-
 .todo-main__input input::placeholder, .todo-main__input input::placeholder {
-  -webkit-box-ordinal-group: none;
-      -ms-flex-order: none;
-          order: none;
   font-style: italic;
   font-weight: 300;
   font-size: 24px;
@@ -149,12 +100,8 @@ button {
 .todo-main-list-item {
   border-bottom: 1px solid #CCCCCC;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -165,12 +112,8 @@ button {
 .todo-main-list-item label {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
   padding: 20px;
 }
@@ -180,12 +123,8 @@ button {
   font-weight: 300;
   font-size: 24px;
   color: #666666;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .todo-main-list-item__text::before {
@@ -196,7 +135,6 @@ button {
   margin-right: 10px;
   border-radius: 50%;
   border: 1px solid #E6E6E6;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -206,7 +144,6 @@ button {
   width: 20px;
   height: 20px;
   background: center no-repeat url("../icons/close.png");
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -216,16 +153,13 @@ button {
 
 .todo-main-list-item__checkbox:checked + .todo-main-list-item__text {
   color: #CCCCCC;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-  -webkit-transition: 0.2s;
+  text-decoration-line: line-through;
   transition: 0.2s;
 }
 
 .todo-main-list-item__checkbox:checked + .todo-main-list-item__text::before {
   border: 1px solid #5DC2AF;
   background: center no-repeat url("../icons/completed.png");
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -234,15 +168,9 @@ button {
   border-top: 1px solid #CCCCCC;
   position: absolute;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
   font-weight: 300;
   font-size: 14px;
@@ -250,18 +178,13 @@ button {
 }
 
 .todo-main-dashboard-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .todo-main-dashboard-filter__item span {
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -282,10 +205,7 @@ button {
   color: #888888;
   border: 1px solid rgba(0, 0, 0, 0);
   padding: 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   background-color: #fff;
 }
 
@@ -303,13 +223,8 @@ button {
     padding-bottom: 113px;
   }
   .todo-main-dashboard-filter {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .todo-main-dashboard-filter__item {
     margin: 7px;
@@ -318,15 +233,6 @@ button {
     font-size: 18px;
   }
   .todo-main__input input, .todo-main__input input {
-    font-size: 18px;
-  }
-  .todo-main__input input::-webkit-input-placeholder, .todo-main__input input::-webkit-input-placeholder {
-    font-size: 18px;
-  }
-  .todo-main__input input:-ms-input-placeholder, .todo-main__input input:-ms-input-placeholder {
-    font-size: 18px;
-  }
-  .todo-main__input input::-ms-input-placeholder, .todo-main__input input::-ms-input-placeholder {
     font-size: 18px;
   }
   .todo-main__input input::placeholder, .todo-main__input input::placeholder {
