@@ -12,14 +12,14 @@
     <header class="todo__header">todos</header>
     <main class="todo-main">
 
-        <div class="todo-main__input">
-            <button aria-label="select all"></button>
-            <input type="text" placeholder="What needs to be done?" aria-label="add task">
+        <div class="todo-main-header">
+            <button class="todo-main-header__btn" aria-label="select all"></button>
+            <input class="todo-main-header__input" type="text" placeholder="What needs to be done?" aria-label="add task">
         </div>
 
         <ul class="todo-main-list">
             <li class="todo-main-list-item">
-                <label>
+                <label class="todo-main-list-item__label">
                     <input class="todo-main-list-item__checkbox" type="checkbox" aria-label="complete task">
                     <span class="todo-main-list-item__text">HTML</span>
                 </label>
@@ -28,7 +28,7 @@
 
 
             <li class="todo-main-list-item">
-                <label>
+                <label class="todo-main-list-item__label">
                     <input class="todo-main-list-item__checkbox" type="checkbox" aria-label="complete task">
                     <span class="todo-main-list-item__text">CSS</span>
                 </label>
@@ -36,7 +36,7 @@
             </li>
 
             <li class="todo-main-list-item">
-                <label>
+                <label class="todo-main-list-item__label">
                     <input class="todo-main-list-item__checkbox" type="checkbox" aria-label="complete task">
                     <span class="todo-main-list-item__text">JS</span>
                 </label>
@@ -44,20 +44,21 @@
             </li>
 
             <li class="todo-main-list-item">
-                <label>
+                <label class="todo-main-list-item__label">
                     <input class="todo-main-list-item__checkbox" type="checkbox" aria-label="complete task">
                     <span class="todo-main-list-item__text">some other</span>
                 </label>
                 <button class="todo-main-list-item__btn" aria-label="remove item"></button>
             </li>
+            
         </ul>
 
         <div class="todo-main-dashboard">
             <span class="todo-main-dashboard__info">3 items left</span>
             <nav class="todo-main-dashboard-filter">
-                <label class="todo-main-dashboard-filter__item"> <input name="tabs"  type="radio" aria-label="all tasks"checked >   <span>All</span>    </label>
-                <label class="todo-main-dashboard-filter__item"> <input name="tabs"  type="radio" aria-label="active tasks">        <span>Active</span>    </label>
-                <label class="todo-main-dashboard-filter__item"> <input name="tabs"  type="radio" aria-label="completed tasks">     <span>Completed</span>    </label>
+                <label class="todo-main-dashboard-filter-item"> <input class="todo-main-dashboard-filter-item__input" name="tabs"  type="radio" aria-label="all tasks"checked >   <span class="todo-main-dashboard-filter-item__text">All</span>    </label>
+                <label class="todo-main-dashboard-filter-item"> <input class="todo-main-dashboard-filter-item__input" name="tabs"  type="radio" aria-label="active tasks">        <span class="todo-main-dashboard-filter-item__text">Active</span>    </label>
+                <label class="todo-main-dashboard-filter-item"> <input class="todo-main-dashboard-filter-item__input" name="tabs"  type="radio" aria-label="completed tasks">     <span class="todo-main-dashboard-filter-item__text">Completed</span>    </label>
             </nav>
             <button class="todo-main-dashboard__clear" aria-label="Clear completed">Clear completed</button>
         </div>
