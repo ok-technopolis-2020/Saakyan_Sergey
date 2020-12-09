@@ -1,0 +1,84 @@
+.todo-main-list {
+    list-style: none;
+  }
+  
+  .todo-main-list-item {
+    border-bottom: 1px solid var(--gray-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .todo-main-list-item:hover {
+    background-color: var(--active-color);
+  }
+  
+  .todo-main-list-item__label {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    padding-right: 50px;
+    background-color: var(--app-color);
+  }
+  
+  .todo-main-list-item__text {
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--item-text-color);
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    padding-left: 50px;
+  }
+  
+  .todo-main-list-item__text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--checkbox-color);
+    transition: 0.2s;
+  }
+  
+  .todo-main-list-item__btn {
+    position: absolute;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: center no-repeat url("../icons/close.svg");
+    transition: 0.2s;
+  }
+  
+  .todo-main-list-item__checkbox {
+    width: 0;
+    height: 0;
+  }
+  
+  .todo-main-list-item__checkbox:checked + .todo-main-list-item__text {
+    color: var(--strikethrough-text-color);
+    text-decoration-line: line-through;
+    transition: 0.2s;
+  }
+  
+  .todo-main-list-item__checkbox:checked + .todo-main-list-item__text::before {
+    border: 1px solid var(--checked-checkbox-color);
+    background: center no-repeat url("../icons/completed.svg");
+    transition: 0.2s;
+  }
+  
+  .todo-main-list-item__checkbox:focus + .todo-main-list-item__text::before {
+    background-color: var(--checkbox-focus-color);
+  }
+  
+  .todo-main-list-item__checkbox:checked:focus + .todo-main-list-item__text::before {
+    background-color: var(--checked-checkbox-focus-color);
+  }

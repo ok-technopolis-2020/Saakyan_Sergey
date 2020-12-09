@@ -1,0 +1,15 @@
+:root {
+    --gray-color: #cccccc;
+    --active-color: #fafafa;
+    --strikethrough-text-color: #cccccc;
+    --background-app-color: #f5f5f5;
+    --app-color: #ffffff;
+    --checkbox-color:  #e6e6e6;
+    --checkbox-focus-color: rgba(0, 0, 0, 0.05);
+    --checked-checkbox-color:  #5dc2af;
+    --checked-checkbox-focus-color:  rgba(93, 194, 175, 0.1);
+    --tabs-border-color:  #ebdfdf;
+    --tabs-focus-color: #000000;
+    --placeholder-color: #cccccc;
+    --item-text-color: #66666666;
+}

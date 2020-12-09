@@ -1,0 +1,6 @@
+.todo__header {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 100px;
+  color: var(--gray-color);
+}

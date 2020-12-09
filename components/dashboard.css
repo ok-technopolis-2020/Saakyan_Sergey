@@ -1,0 +1,85 @@
+.todo-main-dashboard {
+  width: 100%;
+  border-top: 1px solid var(--gray-color);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #888888;
+}
+
+.todo-main-dashboard-filter {
+  display: flex;
+}
+
+.todo-main-dashboard-filter-item__text {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  user-select: none;
+  cursor: pointer;
+}
+
+.todo-main-dashboard-filter-item__input {
+  height: 0;
+  width: 0;
+}
+
+.todo-main-dashboard-filter-item__input:checked + .todo-main-dashboard-filter-item__text {
+  border: 1px solid var(--tabs-border-color);
+  border-radius: 2px;
+}
+
+.todo-main-dashboard-filter-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.todo-main-dashboard__clear {
+  color: #888888;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 5px;
+  user-select: none;
+  background-color: var(--app-color);
+}
+
+.todo-main-dashboard__clear:hover {
+  border: 1px solid var(--tabs-border-color);
+  border-radius: 2px;
+}
+
+.todo-main-dashboard__clear:active {
+  background-color: var(--gray-color);
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .todo-main-dashboard {
+    font-size: 10px;
+  }
+  .todo-main-dashboard-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .todo-main-dashboard-filter-item {
+    margin: 7px;
+  }
+  .todo-main-dashboard__clear {
+    font-size: 10px;
+    width: 60px;
+  }
+  .todo-main-list-item__text {
+    font-size: 18px;
+  }
+  .todo-main__input input {
+    font-size: 18px;
+  }
+  .todo-main__input input::placeholder {
+    font-size: 18px;
+  }
+}
+  

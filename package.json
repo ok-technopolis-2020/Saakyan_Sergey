@@ -1,0 +1,23 @@
+{
+  "name": "saakyan_sergey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "postcss-nested": "^4.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-2020/Saakyan_Sergey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-2020/Saakyan_Sergey/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-2020/Saakyan_Sergey#readme"
+}

@@ -1,0 +1,42 @@
+.todo-main {
+    background-color: var(--app-color);
+    width: 80%;
+    max-width: 562px;
+    min-height: 500px;
+    position: relative;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    padding-bottom: 49px;
+  
+  &::before {
+    display: block;
+    height: 5px;
+    content: "";
+    background-color: var(--app-color);
+    position: absolute;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    bottom: -4px;
+    width: 98%;
+    left: 1%;
+    z-index: 1;
+  }
+  
+  &::after {
+    display: block;
+    height: 5px;
+    content: "";
+    background-color: var(--app-color);
+    position: absolute;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    bottom: -8px;
+    width: 96%;
+    left: 2%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .todo-main {
+    padding-bottom: 101px;
+  }
+}
